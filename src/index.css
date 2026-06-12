@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-clinical-50: #f4f8fc;
+  --color-clinical-100: #e7f0fa;
+  --color-clinical-200: #cce1f4;
+  --color-clinical-300: #a0c7eb;
+  --color-clinical-400: #6ca8de;
+  --color-clinical-500: #478ace;
+  --color-clinical-600: #346fb8;
+  --color-clinical-700: #2b5895;
+  --color-clinical-800: #274b7c;
+  --color-clinical-900: #244067;
+  --color-clinical-950: #0f4c81;
+  
+  --color-tealAccent-50: #f0fdf9;
+  --color-tealAccent-100: #ccfbf0;
+  --color-tealAccent-200: #99f6e1;
+  --color-tealAccent-300: #5eead0;
+  --color-tealAccent-400: #2dd4b7;
+  --color-tealAccent-500: #14b89e;
+  --color-tealAccent-600: #0d9480;
+  --color-tealAccent-700: #0f7667;
+  --color-tealAccent-800: #115e52;
+  --color-tealAccent-900: #134e45;
+  --color-tealAccent-950: #00a896;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+}
+
+/* Custom styles and overrides */
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.glassmorphism {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+.glassmorphism-dark {
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Print styles for Brochure Modal */
+@media print {
+  /* Hide the entire standard app container */
+  #root,
+  .print-hidden,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Make document background clean white */
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    font-size: 12pt !important;
+  }
+
+  /* Target the portal root specifically for rendering */
+  #brochure-portal-root {
+    position: static !important;
+    display: block !important;
+    background: #ffffff !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Style inside components for full print page size */
+  #brochure-portal-root > div {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+  }
+}
+
