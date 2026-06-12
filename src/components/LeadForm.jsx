@@ -83,21 +83,19 @@ export default function LeadForm({ selectedPackageFromApp, clearSelectedPackage 
     return `https://wa.me/919569517193?text=${encodeURIComponent(message)}`;
   };
 
-  const handleSubmit = (e, target) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
     
-    // Simulate API call for booking submission
+    // Simulate booking submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
       
-      if (target === 'whatsapp') {
-        const whatsappUrl = generateWhatsAppUrl(formData);
-        window.open(whatsappUrl, '_blank');
-      }
+      const whatsappUrl = generateWhatsAppUrl(formData);
+      window.open(whatsappUrl, '_blank');
       
       clearSelectedPackage();
     }, 1000);
@@ -284,24 +282,21 @@ export default function LeadForm({ selectedPackageFromApp, clearSelectedPackage 
                 </div>
 
                 {/* Action buttons */}
-                <div className="pt-4 flex flex-col sm:flex-row gap-4">
+                <div className="pt-4">
                   <button
-                    type="button"
-                    onClick={(e) => handleSubmit(e, 'local')}
+                    type="submit"
+                    onClick={handleSubmit}
                     disabled={isSubmitting}
-                    className="flex-1 py-4 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-2xl font-bold transition-all shadow-sm text-sm"
+                    className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-2xl font-extrabold transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-2 text-sm md:text-base cursor-pointer hover:shadow-xl active:scale-[0.99] disabled:opacity-50"
                   >
-                    {isSubmitting ? 'Submitting...' : 'Submit Booking'}
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={(e) => handleSubmit(e, 'whatsapp')}
-                    disabled={isSubmitting}
-                    className="flex-1 py-4 bg-emerald-500 hover:bg-emerald-650 text-white rounded-2xl font-extrabold transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-2 text-sm"
-                  >
-                    <MessageSquare className="w-5 h-5" />
-                    <span>Confirm via WhatsApp (Fastest)</span>
+                    {isSubmitting ? (
+                      <span>Submitting Booking...</span>
+                    ) : (
+                      <>
+                        <MessageSquare className="w-5 h-5" />
+                        <span>Confirm booking &amp; Send to WhatsApp</span>
+                      </>
+                    )}
                   </button>
                 </div>
               </form>
