@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-extrabold tracking-tight text-white leading-none">
-                  Thyrocare <span className="text-tealAccent-400">Diagnostics</span>
+                  Thyrocare
                 </span>
                 <span className="text-[10px] tracking-wider text-slate-500 uppercase font-bold mt-1">
                   Geeta Diagnostic Centre
@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           {/* Copyrights */}
           <div className="text-xs text-slate-500">
-            &copy; {currentYear} Thyrocare Diagnostics - Geeta Diagnostic Centre. All rights reserved.
+            &copy; {currentYear} Thyrocare - Geeta Diagnostic Centre. All rights reserved.
             <span className="block mt-1 font-medium">
               Authorized partner franchisee diagnostics laboratory services.
             </span>
