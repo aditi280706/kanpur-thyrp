@@ -19,7 +19,7 @@ export default function ContactSection() {
     {
       icon: Clock,
       title: 'Working Hours',
-      value: 'Monday - Sunday: 06:00 AM - 08:00 PM',
+      value: 'Monday - Sunday: 08:00 AM - 05:00 PM',
       href: null,
       actionText: 'Home collection slots available'
     }

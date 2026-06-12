@@ -9,7 +9,7 @@ export default function LeadForm({ selectedPackageFromApp, clearSelectedPackage 
     packageId: '',
     address: '',
     date: '',
-    timeSlot: 'Morning (07:00 AM - 11:00 AM)', // Fasting packages are usually done in the morning
+    timeSlot: 'Morning (08:00 AM - 11:00 AM)', // Fasting packages are usually done in the morning
   });
 
   const [errors, setErrors] = useState({});
@@ -33,7 +33,6 @@ export default function LeadForm({ selectedPackageFromApp, clearSelectedPackage 
   }, [selectedPackageFromApp]);
 
   const timeSlots = [
-    'Early Morning (06:00 AM - 08:00 AM)',
     'Morning (08:00 AM - 11:00 AM)',
     'Mid Day (11:00 AM - 02:00 PM)',
     'Afternoon (02:00 PM - 05:00 PM)',
