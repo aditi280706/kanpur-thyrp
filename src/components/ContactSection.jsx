@@ -134,8 +134,8 @@ export default function ContactSection() {
                 <div className="absolute -bottom-1.5 w-8 h-8 rounded-full border border-clinical-950/40 bg-clinical-950/10 animate-ping" />
                 
                 {/* Tooltip Card */}
-                <div className="bg-white/95 border border-slate-200/50 p-2.5 rounded-xl shadow-lg mt-3 text-center text-[11px] font-bold text-slate-800 w-44 backdrop-blur-md">
-                  Thyrocare Shuklaganj
+                <div className="bg-white/95 border border-slate-200/50 p-2.5 rounded-xl shadow-lg mt-3 text-center text-[11px] font-bold text-slate-800 w-52 backdrop-blur-md">
+                  Thyrocare - Geeta Diagnostic Centre
                   <span className="block font-medium text-[9px] text-slate-500 mt-0.5">Shop No. 1, Ground Floor</span>
                 </div>
               </div>

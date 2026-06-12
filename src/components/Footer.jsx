@@ -31,9 +31,14 @@ export default function Footer() {
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-tealAccent-500 text-white shadow-md">
                 <ShieldCheck className="w-5 h-5" />
               </div>
-              <span className="text-xl font-extrabold tracking-tight text-white">
-                Thyrocare <span className="text-tealAccent-400">Diagnostics</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-xl font-extrabold tracking-tight text-white leading-none">
+                  Thyrocare <span className="text-tealAccent-400">Diagnostics</span>
+                </span>
+                <span className="text-[10px] tracking-wider text-slate-500 uppercase font-bold mt-1">
+                  Geeta Diagnostic Centre
+                </span>
+              </div>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
               Thyrocare Shuklaganj is an authorized diagnostics collection center partner, offering NABL-accredited health checkup packages and free home collection across Shuklaganj and Unnao.
@@ -105,7 +110,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           {/* Copyrights */}
           <div className="text-xs text-slate-500">
-            &copy; {currentYear} Thyrocare Diagnostics Shuklaganj. All rights reserved.
+            &copy; {currentYear} Thyrocare Diagnostics - Geeta Diagnostic Centre. All rights reserved.
             <span className="block mt-1 font-medium">
               Authorized partner franchisee diagnostics laboratory services.
             </span>

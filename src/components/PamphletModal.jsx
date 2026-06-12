@@ -39,7 +39,7 @@ export default function PamphletModal({ isOpen, onClose, selectedPackage, onBook
             </div>
             <div>
               <div class="brand">Thyrocare</div>
-              <div class="partner">Diagnostic Partner - Shuklaganj, Unnao</div>
+              <div class="partner">Geeta Diagnostic Centre &bull; Shuklaganj, Unnao</div>
             </div>
           </div>
 

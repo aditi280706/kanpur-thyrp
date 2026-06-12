@@ -47,7 +47,7 @@ export default function BrochureModal({ isOpen, onClose, selectedPackage, onBook
                 Thyrocare
               </div>
               <div className="text-[10px] sm:text-xs font-heading font-extrabold text-slate-500 uppercase tracking-widest mt-1">
-                Authorized Collection Partner &bull; Shuklaganj, Unnao
+                Geeta Diagnostic Centre &bull; Authorized Partner, Shuklaganj
               </div>
             </div>
             
