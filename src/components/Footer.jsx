@@ -35,7 +35,7 @@ export default function Footer() {
                 <span className="text-xl font-extrabold tracking-tight text-white leading-none">
                   Thyrocare
                 </span>
-                <span className="text-[10px] tracking-wider text-slate-500 uppercase font-bold mt-1">
+                <span className="text-xs sm:text-sm tracking-wide text-tealAccent-400 uppercase font-black mt-1">
                   Geeta Diagnostic Centre
                 </span>
               </div>

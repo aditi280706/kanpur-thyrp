@@ -15,7 +15,7 @@ export default function PamphletModal({ isOpen, onClose, selectedPackage, onBook
             body { font-family: 'Inter', sans-serif; color: #1e293b; padding: 30px; line-height: 1.6; }
             .header { border-bottom: 2px solid #0f4c81; padding-bottom: 15px; margin-bottom: 25px; }
             .brand { font-size: 24px; font-weight: bold; color: #0f4c81; }
-            .partner { font-size: 11px; color: #64748b; font-weight: bold; text-transform: uppercase; }
+            .partner { font-size: 14px; color: #0d9480; font-weight: 800; text-transform: uppercase; margin-top: 4px; display: block; }
             .title { font-size: 28px; font-weight: 800; color: #0f4c81; margin: 15px 0 5px 0; }
             .badge { background: #eef6fc; color: #0f4c81; padding: 4px 10px; border-radius: 15px; font-weight: bold; font-size: 12px; display: inline-block; }
             .price-info { float: right; text-align: right; }

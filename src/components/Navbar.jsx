@@ -61,7 +61,7 @@ export default function Navbar() {
               <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-clinical-950 leading-none">
                 Thyrocare
               </span>
-              <span className="text-[10px] tracking-wider text-slate-500 uppercase font-bold mt-0.5">
+              <span className="text-xs sm:text-sm tracking-wide text-tealAccent-600 uppercase font-black mt-1">
                 Geeta Diagnostic Centre
               </span>
             </div>

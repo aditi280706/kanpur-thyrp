@@ -46,8 +46,11 @@ export default function BrochureModal({ isOpen, onClose, selectedPackage, onBook
                 <Heart className="w-7 h-7 text-clinical-950 fill-clinical-950" />
                 Thyrocare
               </div>
-              <div className="text-[10px] sm:text-xs font-heading font-extrabold text-slate-500 uppercase tracking-widest mt-1">
-                Geeta Diagnostic Centre &bull; Authorized Partner, Shuklaganj
+              <div className="text-xs sm:text-sm font-heading font-black text-tealAccent-600 uppercase tracking-wide mt-1">
+                Geeta Diagnostic Centre
+              </div>
+              <div className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-widest mt-0.5">
+                Authorized Partner &bull; Shuklaganj, Unnao
               </div>
             </div>
             
